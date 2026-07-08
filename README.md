@@ -1,6 +1,14 @@
 # Display Detective
 
-> **Knows nothing about your display — but will find its pins.**  
+> **Knows nothing about your display — but will find its pins.  Perhaps**
+> If you have an ESP32 board with a built-in display, and you can't find the correct pin config for TFT libraries, this may help.
+> After wasting a lot of time trying to get the ESP board from hell, with built-in display, working, I semi vib-coded this.
+> It cycles through scraped known pin configs - it uses the serial port.  It will try each one, and update you - if the thing hangs, just add 1
+> to a line at the top of the code, upload, and it will carry on.  It treies hard not to break it.
+>
+> The program WILL crash your board as it runs.  It may crash it so that you have to do a hardware reset on the board.
+> If you've come here, that probably doesn't amtter, as the next step is the bin.
+> 
 > Upload, watch the serial monitor, wait for a red screen.
 
 ---
