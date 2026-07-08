@@ -1,2 +1,4 @@
-# DisplayDetective
-Find pinouts for ESP32s with built-in displays
+# SolarChargerESP32
+Chinese Solar Chargers Decoded
+![Alt text](assets/charger.JPG)
+
