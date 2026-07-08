@@ -1,8 +1,9 @@
 # Display Detective
 
 > **Knows nothing about your display — but will find its pins.  Perhaps**
+> 
 > If you have an ESP32 board with a built-in display, and you can't find the correct pin config for TFT libraries, this may help.
-> After wasting a lot of time trying to get the ESP board from hell, with built-in display, working, I semi vib-coded this.
+> After wasting a lot of time trying to get the ESP board from hell, with built-in display, working, I semi vib-coded this to solve for me.
 > It cycles through scraped known pin configs - it uses the serial port.  It will try each one, and update you - if the thing hangs, just add 1
 > to a line at the top of the code, upload, and it will carry on.  It treies hard not to break it.
 >
@@ -47,7 +48,7 @@ Each config is tested for ~5 seconds (SPI modes 0–3).
 
 ### 3. Watch the display
 
-When the screen turns **solid red**, check the serial output for the config number.
+When the screen turns **solid red** or if it lights up at all, even messed-up - if you can see some colors, it's working. Check the serial output for the config number.
 
 That config's pin assignments work for your display. Use them in TFT_eSPI or any other library.
 
